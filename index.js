@@ -1,7 +1,7 @@
 const express = require('express');
+const cors = require('cors');
 const { MongoClient } = require('mongodb');
 const ObjectId = require('mongodb').ObjectId;
-const cors = require('cors');
 const port = process.env.PORT || 5000;
 require('dotenv').config();
 
@@ -85,7 +85,7 @@ Every project
 6. heroku login
 7. heroku create (only one time for a project)
 8. command:  git push heroku main
-9. heroku > app > settings > add Var (add DB_USER, DB_PASS)
+9. heroku > app > settings > Reveal Config Vars> add Var (add DB_USER, DB_PASS)
 --------------------------------------------------
 
 update:
